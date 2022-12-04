@@ -29,27 +29,16 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input thurd number: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
 
-if(num1 > num2)
+int max = num1;
+if(num2 > max)
 {
-    if(num1 > num3)
-    {
-        Console.Write(num1);
-    }
+    max = num2;
 }
-if(num2 > num1)
+if(num3 > max)
 {
-    if(num2 > num3)
-    {
-        Console.Write(num2);
-    }
+    max = num3;
 }
-if(num3 > num1)
-{
-    if(num3 > num2)
-    {
-        Console.Write(num3);
-    }
-}
+Console.Write(max);
 */
 // Задача 3 Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 /*
